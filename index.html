@@ -11,30 +11,118 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
   <title>WheelOS</title>
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-  <!-- nice selecy -->
-  <link rel="stylesheet" href="css/nice-select.min.css">
-
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  
 
   <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+    @media (max-width: 1300px) {}
+
+@media (max-width: 1120px) {}
+
+@media (max-width: 992px) {
+  .hero_area {
+    min-height: auto;
+  }
+
+  .custom_nav-container .form-inline {
+    justify-content: center;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 15px;
+  }
+
+  .custom_nav-container .navbar-nav {
+    padding-top: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 25px;
+    margin: 5px 0;
+  }
+
+  .about_section .detail-box {
+    margin-top: 45px;
+  }
+
+  .pricing_section .box {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info_section .contact_nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+
+  .info_section .contact_nav a:not(:nth-last-child(1)) {
+    margin-bottom: 25px;
+  }
+
+  .info_section .contact_nav a {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .info_section .info_top {
+    padding: 0;
+  }
+
+  .info_section .info_top .row>div {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {
+  .slider_section .detail-box h1 {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 376px) {}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+button {
+  font-weight: 500;
+}
     body{
       background: linear-gradient(120deg,#fff, #92E5F7);
     }
@@ -943,142 +1031,14 @@
     <!-- end slider section -->
   </div>
 
-  <!-- about section -->
-
-  <!-- <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="heading_container ">
-        <h2>
-          About Us
-        </h2>
-        <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum
-          voluptatibus
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 ">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="detail-box">
-            <h3>
-              We Are Here For Help
-            </h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage to be sure there isn't anything
-              the middle of text.
-            </p>
-            <p>
-              Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste
-              corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end about section -->
-
-  <!-- why section -->
-
-  <!-- <section class="why_section layout_padding-bottom">
-    <div class="container">
-      <div class="col-md-10 px-0">
-        <div class="heading_container">
-          <h2>
-            Why Choose Us
-          </h2>
-          <p>
-            Eaque nostrum quis ad aliquam autem odio assumenda accusamus, consequuntur, iste voluptate voluptates quia
-            non dicta hic repellendus similique a facere earum omnis? Repellendus nemo, aspernatur ullam est deserunt
-            officiis.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/w1.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                No Booking Fees
-              </h4>
-              <p>
-                Voluptatem earum eveniet mollitia sit animi dolorum. Iste, quas? Omnis error culpa illo nihil
-                consequatur consectetur tenetur harum modi, quae libero ducimus reiciendis voluptat excepturi. Cum
-                ducimus nesciunt dicta tenetur ducimus perferendis.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/w2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Online Payments
-              </h4>
-              <p>
-                Voluptatem earum eveniet mollitia sit animi dolorum. Iste, quas? Omnis error culpa illo nihil
-                consequatur consectetur tenetur harum modi, quae libero ducimus reiciendis voluptat excepturi. Cum
-                ducimus nesciunt dicta tenetur ducimus perferendis.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/w3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Simple Booking Process
-              </h4>
-              <p>
-                Voluptatem earum eveniet mollitia sit animi dolorum. Iste, quas? Omnis error culpa illo nihil
-                consequatur consectetur tenetur harum modi, quae libero ducimus reiciendis voluptat excepturi. Cum
-                ducimus nesciunt dicta tenetur ducimus perferendis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end why section -->
-
   <!-- pricing section -->
-
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-  </script>
-  <!-- nice select -->
-  <script src="js/jquery.nice-select.min.js"></script>
-  <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
+ 
 
 </body>
 
